@@ -13,8 +13,8 @@
     <div class="header-right">
       <slot name="header-right">
 
-          <button class="btn btn-outline-primary btn-sm bg-blue-200 prev-month" v-if="!isPrevMonthDisabled" @click.stop="goPrev"><i class="fal fa-chevron-left"></i></button>
-          <button class="btn btn-outline-primary btn-sm bg-blue-200 next-month" v-if="!isNextMonthDisabled" c @click.stop="goNext"><i class="fal fa-chevron-right"></i></button>
+          <button class="bg-blue-200 text-blue-800 prev-month" v-if="!isPrevMonthDisabled" @click.stop="goPrev"><fa class="fill-current" :icon="['fal', 'chevron-left']" /></button>
+          <button class="bg-blue-200 text-blue-800 next-month" v-if="!isNextMonthDisabled" c @click.stop="goNext"><fa class="fill-current" :icon="['fal', 'chevron-right']" /></button>
 
       </slot>
     </div>
@@ -32,7 +32,7 @@
       disable: {
         type: Object,
         required: true
-      }
+      },
     },
     data() {
       return {
