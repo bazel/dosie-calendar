@@ -2,7 +2,7 @@
   <div class="calendar-header">
     <div class="header-left">
       <slot name="header-left">
-          <button class="today px-2 py-1 bg-pink-100 text-pink-500" @click.stop="goToday"><fa class="fill-current" :icon="['fal', 'star']" /> </button>
+          <button class="today px-2 py-1 bg-pink-100 text-pink-500" @click.stop="goToday"><fa class="fill-current" :icon="['fas', 'star']" /> </button>
       </slot>
     </div>
     <div class="header-center">
