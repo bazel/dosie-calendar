@@ -8,7 +8,7 @@
       v-for="(event, index) in eventList"
     >
       <div class="event-title">
-        <fa class="event-icon mr-1" :icon="event.icon" /> {{ event.title }}
+        <fa class="event-icon mr-1" :class="event.iconColor" :icon="event.icon" /> {{ event.title }}
       </div>
 
     </div>
