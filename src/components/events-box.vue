@@ -7,8 +7,8 @@
       @click.stop="eventClicked(event)"
       v-for="(event, index) in eventList"
     >
-      <div class="event-title flex">
-        <div><fa class="event-icon mr-1" :class="event.iconColor" :icon="event.icon" ></fa></div><div> {{ event.title }}</div>
+      <div class="event-title md:flex">
+        <div class="float-left"><fa class="event-icon mr-1" :class="event.iconColor" :icon="event.icon" ></fa></div><div> {{ event.title }}</div>
       </div>
 
     </div>
